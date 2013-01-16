@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/fileTransferCancelButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fileTransferOKButton"
+        android:layout_below="@+id/fileTransferOKButton"
+        android:onClick="cancelFileTransfer"
+        android:text="@string/Cancel" />
+
+    <Button
+        android:id="@+id/fileTransferOKButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fileTransferHelpText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:onClick="sendFileURL"
+        android:text="@string/OK" />
+
+    <EditText
+        android:id="@+id/fileTransferURLTextbox"
+        android:inputType="textUri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="13"
+        android:hint="@string/hint" />
+
+    <TextView
+        android:id="@+id/fileTransferHelpText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fileTransferURLTextbox"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/help_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</RelativeLayout>

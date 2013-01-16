@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    
+    <LinearLayout android:id="@+id/mainMenuOptions" android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+    	android:layout_height="wrap_content" android:orientation="horizontal"
+    	style="@android:style/ButtonBar">
+
+        <TextView
+            android:id="@+id/contactEditDeleteText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="top"
+            android:text="@string/contactEditDeleteText" />
+            
+    	<Button android:id="@+id/addButton" android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" android:layout_weight="1"
+        	android:text="@string/mainMenuAddContact"
+        	android:onClick="addContactClicked" 
+        	/>
+    	
+    	<Button android:id="@+id/capabilitiesButton" android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" android:layout_weight="1"
+        	android:text="@string/mainMenuCapabilities"
+        	android:onClick="getCapabilitiesClicked" 
+        	/>
+    	
+    </LinearLayout>
+
+     <LinearLayout 
+        		android:layout_width="fill_parent"
+	            android:layout_alignParentTop="true"
+	            android:layout_above="@+id/mainMenuOptions"
+        		android:layout_height="fill_parent"
+	            android:id="@+id/contactListHolder">
+    	<ListView
+	            android:id="@+id/contactList"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"	
+	            android:divider="#b5b5b5"
+        		android:dividerHeight="1dp"
+        		android:listSelector="@drawable/list_selector"  
+        		
+	            >    		
+	    </ListView>
+    
+    	
+    	
+    </LinearLayout> 
+
+    
+    
+</RelativeLayout>
