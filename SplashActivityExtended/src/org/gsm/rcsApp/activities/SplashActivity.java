@@ -27,8 +27,7 @@ public class SplashActivity extends Activity {
 	public static String userId=null;
 	
 //	public static String appCredentialUsername="NOUSER";
-//	public static final String appCredentialPassword="3Kvm4\"DD";
-	public static final String appCredentialPassword="d/kX)6M8";
+	public static final String appCredentialPassword="application_password";
 	
 	static SplashActivity _instance=null;
 	
